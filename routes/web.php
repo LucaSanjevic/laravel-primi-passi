@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/numeri', function () {
+    return view('numeri', [
+      'telefono'=>'052276378463',
+      'cellulare'=>'3408396627'
+    ]
+  );
 });
